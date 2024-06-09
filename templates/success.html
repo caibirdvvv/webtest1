@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Registration Success</title>
+    <style>
+      .container {
+        width: 50%;
+        margin: 0 auto;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      table, th, td {
+        border: 1px solid black;
+      }
+      th, td {
+        padding: 10px;
+        text-align: left;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+      h2 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>注册成功</h2>
+      <table>
+        <tr>
+          <th>字段</th>
+          <th>值</th>
+        </tr>
+        <tr>
+          <td>姓名</td>
+          <td>{{ name }}</td>
+        </tr>
+        <tr>
+          <td>性别</td>
+          <td>{{ gender }}</td>
+        </tr>
+        <tr>
+          <td>身份证号</td>
+          <td>{{ idNumber }}</td>
+        </tr>
+        <tr>
+          <td>家庭住址</td>
+          <td>{{ address }}</td>
+        </tr>
+        <tr>
+          <td>手机号</td>
+          <td>{{ phone }}</td>
+        </tr>
+        <tr>
+          <td>是否有医保</td>
+          <td>{{ insurance }}</td>
+        </tr>
+        <tr>
+          <td>医保卡号</td>
+          <td>{{ insuranceNumber }}</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

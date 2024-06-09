@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Submit Form</title>
+    <style>
+      .container {
+        width: 50%;
+        margin: 0 auto;
+      }
+      label {
+        display: block;
+        margin-top: 10px;
+      }
+      input, select {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+      }
+      button {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+            .logo {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 200px; 
+      }
+    </style>
+  </head>
+  <body>
+     <!-- Logo Image -->
+    <img src="/static/tjutcmlogo.png" class="logo" alt="Logo">
+    <div class="container">
+      <h2>注册与登录</h2>
+      <form id="registerForm" action="/submit" method="post">
+        <label for="name">姓名</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="gender">性别</label>
+        <select id="gender" name="gender" required>
+          <option value="male">男</option>
+          <option value="female">女</option>
+        </select>
+
+        <label for="idNumber">身份证号</label>
+        <input type="text" id="idNumber" name="idNumber" required>
+
+        <label for="address">家庭住址</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="phone">手机号</label>
+        <input type="text" id="phone" name="phone" required>
+
+        <label for="insurance">是否有医保</label>
+        <select id="insurance" name="insurance" required>
+          <option value="yes">是</option>
+          <option value="no">否</option>
+        </select>
+
+        <label for="insuranceNumber">医保卡号</label>
+        <input type="text" id="insuranceNumber" name="insuranceNumber">
+
+        <button type="submit">注册</button>
+      </form>
+    </div>
+  </body>
+</html>
