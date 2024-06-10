@@ -1,4 +1,4 @@
-#!/user/bin/env bash
+#!/usr/bin/env bash
 
 echo -e "\033[34m---------------------wsgi process---------------------\033[0m"
 
